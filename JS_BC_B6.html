@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>JS Buổi 6</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .kq {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Bài tập 1 -->
+    <section id="bt1" class="container row">
+        <div class="col-12">
+            <h2 class="text-danger">Bài tập 1: Tìm số nhỏ nhất sao cho tổng của 1 đến số đó lớn hơn giới hạn</h2>
+        </div>
+        <div class="card col-md-6 col-12">
+            <div class="card-header text-primary container">
+                <h4>Tìm số nhỏ nhất thỏa điều kiện tổng từ 1 đến số đó lớn hơn giới hạn đã đặt</h4>
+            </div>
+            <div class="card-body">
+                <div class="form-group row">
+                    <label class="col-12" for="">Nhập giới hạn mà bạn muốn xét</label>
+                    <input id="gioi__han" type="number" class="form-control col-12" name="" aria-describedby="helpId"
+                        placeholder="">
+                    <small style="color: red;"><i>Giả định giới hạn nhập luôn là 1 số dương</i></small>
+                </div>
+            </div>
+            <button id="tim__so" class="btn btn-success">Bắt đầu tìm số</button>
+            <div id="xuat__kq" class="card-footer">
+            </div>
+        </div>
+    </section>
+    <!-- Bài tập 2 -->
+    <section id="bt2" class="container row">
+        <div class="col-12">
+            <h2 class="text-danger">Bài tập 2: Tìm tổng lũy thừa theo lũy tiến của số</h2>
+        </div>
+        <div class="card col-md-6 col-12">
+            <div class="card-header text-primary container">
+                <h4>Tìm tổng lũy thừa theo lũy tiến của số</h4>
+            </div>
+            <div class="card-body">
+                <div class="form-group row">
+                    <label class="col-12" for="">Nhập số bạn muốn lũy thừa</label>
+                    <input id="so__canlt" type="number" class="form-control col-12" name="" aria-describedby="helpId"
+                        placeholder="">
+                    <label class="col-12" for="">Giới hạn lũy thừa muốn xét</label>
+                    <input id="gioi__han__lt" type="number" class="form-control col-12" name=""
+                        aria-describedby="helpId" placeholder="">
+                    <small style="color: red;"><i>Giả định giới hạn lũy thừa luôn là 1 số nguyên dương</i></small>
+                </div>
+            </div>
+            <button id="tinh__tong" class="btn btn-success">Bắt đầu tính tổng</button>
+            <div id="xuat__tong" class="card-footer">
+            </div>
+        </div>
+    </section>
+    <!-- Bài tập 3 -->
+    <section id="bt6" class="container row">
+        <div class="col-12">
+            <h2 class="text-danger">Bài tập 3: Tính giai thừa</h2>
+        </div>
+        <div class="card col-md-6 col-12">
+            <div class="card-header text-primary container">
+                <h4>Tính giai thừa của số</h4>
+            </div>
+            <div class="card-body">
+                <div class="form-group row">
+                    <label class="col-12" for="">Nhập số bạn tính giai thừa</label>
+                    <input id="so__gt" type="number" class="form-control col-12" name="" aria-describedby="helpId"
+                        placeholder="">
+                    <small style="color: red;"><i>Giả định số cần tính giai thừa luôn là 1 số nguyên dương</i></small>
+                </div>
+            </div>
+            <button id="tinh__giaithua" class="btn btn-success">Bắt đầu tính tổng</button>
+            <div id="xuat__giaithua" class="card-footer">
+            </div>
+        </div>
+    </section>
+    <!-- Bài tập 4 -->
+    <section id="bt4" class="container row">
+        <div class="col-12">
+            <h2 class="text-danger">Bài tập 4: Xuất thẻ</h2>
+        </div>
+        <div class="card col-md-6 col-12">
+            <div class="card-header text-primary container">
+                <h4>Xuất thẻ có định dạng</h4>
+            </div>
+            <div class="card-body">
+                <div class="form-group row">
+                    <label class="col-12" for="">Nhập số thẻ bạn mong muốn xuất</label>
+                    <input id="so__the" type="number" class="form-control col-12" name="" aria-describedby="helpId"
+                        placeholder="">
+                    <small style="color: red;"><i>Số thẻ luôn là 1 số nguyên dương</i></small>
+                </div>
+            </div>
+            <button id="xuat__the" class="btn btn-success">Bắt đầu xuất thẻ</button>
+            <div id="xuat__the_ra" class="card-footer">
+            </div>
+        </div>
+    </section>
+    <!-- Bài tập 5 -->
+    <section id="bt5" class="container row">
+        <div class="col-12">
+            <h2 class="text-danger">Bài tập 5: Tìm số nguyên tố trong giới hạn cho trước</h2>
+        </div>
+        <div class="card col-md-6 col-12">
+            <div class="card-header text-primary container">
+                <h4>Tìm số nguyên tố</h4>
+            </div>
+            <div class="card-body">
+                <div class="form-group row">
+                    <label class="col-12" for="">Nhập giới hạn mà bạn muốn xét</label>
+                    <input id="so__gh" type="number" class="form-control col-12" name="" aria-describedby="helpId"
+                        placeholder="">
+                    <small style="color: red;"><i>Giả định giới hạn luôn là 1 số dương</i></small>
+                </div>
+            </div>
+            <button id="xuat__chuoi__so" class="btn btn-success">Bắt đầu xuất thẻ</button>
+            <div id="xuat__chuoi__ra" class="card-footer">
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./JS_BC_B6.js"></script>
+</body>
+
+</html>
